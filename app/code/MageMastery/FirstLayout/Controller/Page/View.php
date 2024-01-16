@@ -10,7 +10,7 @@ use Magento\Framework\View\Result\PageFactory;
 
 class View implements ActionInterface
 {
-    protected $pageFactory;
+    protected PageFactory $resultPageFactory;
 
     public function __construct(PageFactory $resultPageFactory)
     {
@@ -19,7 +19,7 @@ class View implements ActionInterface
 
     public function execute()
     {
-        $page = $this->resultPageFactory->create(ResultFactory::TYPE_PAGE);
+        $page = $this->resultPageFactory->create();
         $block = $page->getLayout()->getBlock('magemastery.first.layout.example');
         $block->setData("data_key", "some info");
         return $page;

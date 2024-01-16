@@ -1,7 +1,10 @@
 <?php
+use Magento\Framework\Escaper;
 use Magento\Framework\View\Element\Template;
+
 /** @var Template $block */
+/** @var Escaper $escaper  */
 ?>
 <h1>My First Template</h1>
 <p>With Layout support</p>
-<!-- <p>--><?php //= $escaper->escapeHtml($block->getData('custom_parameter')); ?><!--</p>-->
+ <p><?= $escaper->escapeHtml($block->getData('data_key')); ?></p>

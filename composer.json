@@ -45,14 +45,15 @@
     },
     "require-dev": {
         "allure-framework/allure-phpunit": "^2",
+        "captainhook/captainhook": "^5.19",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
         "dg/bypass-finals": "^1.4",
-        "friendsofphp/php-cs-fixer": "^3.8",
+        "friendsofphp/php-cs-fixer": "^3.46",
         "lusitanian/oauth": "^0.8",
-        "magento/magento-coding-standard": "*",
-        "magento/magento2-functional-testing-framework": "^4.3.1",
+        "magento/magento-coding-standard": "^31.0",
+        "magento/magento2-functional-testing-framework": "^4.3",
         "pdepend/pdepend": "^2.10",
-        "phpmd/phpmd": "^2.12",
+        "phpmd/phpmd": "^2.15",
         "phpstan/phpstan": "^1.9",
         "phpunit/phpunit": "^9.5",
         "sebastian/comparator": "<=4.0.6",
@@ -85,4 +86,3 @@
         "magento-force": "override"
     }
 }
-
